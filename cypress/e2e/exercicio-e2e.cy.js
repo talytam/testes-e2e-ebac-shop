@@ -46,6 +46,8 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
         //Validar compra
         cy.get('#place_order').click()
+
+        cy.get('.woocommerce-notice').should('contain', 'Obrigado. Seu pedido foi recebido.')
      });
 
 
